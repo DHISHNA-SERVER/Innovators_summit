@@ -2758,3 +2758,18 @@ input:required {
   width: 200px;
   border-radius:  10px;
 }
+@media only screen and (max-width: 990px) and (min-width: 640px)
+{
+  .gdglogo
+  {
+    width: 100px;
+  }
+}
+
+@media only screen and (max-width: 640px)
+{
+  .gdglogo
+  {
+    width: 70px;
+  }
+}
