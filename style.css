@@ -2584,7 +2584,7 @@ input:required {
       -o-transition-duration: 300ms;
       transition-duration: 300ms;
       max-height: 110px;
-      opacity: 0.5; }
+      opacity: 1; }
       @media only screen and (min-width: 992px) and (max-width: 1199px) {
         .our-sponsor-area .single-sponsor a img {
           max-height: 90px; } }
@@ -2595,7 +2595,8 @@ input:required {
         .our-sponsor-area .single-sponsor a img {
           max-height: 30px; } }
     .our-sponsor-area .single-sponsor:hover a img, .our-sponsor-area .single-sponsor:focus a img {
-      opacity: 1; }
+      opacity: 1;
+      transform: scale(1.2); }
 
 /* :: 20.0 Contact Area CSS */
 .contact-our-area {
@@ -2751,3 +2752,24 @@ input:required {
   height: 60px;
 }
 
+.gdglogo{
+  background-color: white;
+  margin: 5px;
+  width: 200px;
+  border-radius:  10px;
+}
+@media only screen and (max-width: 990px) and (min-width: 640px)
+{
+  .gdglogo
+  {
+    width: 100px;
+  }
+}
+
+@media only screen and (max-width: 640px)
+{
+  .gdglogo
+  {
+    width: 70px;
+  }
+}
