@@ -2790,3 +2790,8 @@ input:required {
   font-size: 14px;
   font-weight: 400;
 }
+.form-group
+{
+  color: white;
+
+}
