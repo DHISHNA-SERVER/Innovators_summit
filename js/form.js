@@ -7,6 +7,8 @@ $(document).ready(function() {
 
         // change to submitting..
 
+        $("#btn1").text("Submitting...");
+
         var name = $("#name").val();
         console.log(name);
         var email = $("#email").val();
