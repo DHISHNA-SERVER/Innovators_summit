@@ -15,6 +15,12 @@
     <!-- Stylesheet -->
     <link rel="stylesheet" href="style.css">
 
+    <!-- JQuery -->
+    <script
+			  src="https://code.jquery.com/jquery-3.4.1.min.js"
+			  integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+			  crossorigin="anonymous"></script>
+
 </head>
 
 <body>
@@ -160,15 +166,20 @@
                             <h4>Count Every Second Until the Event</h4>
                         </div>
                     </div>
+                    
 
                     <div class="col-12 col-md-9">
                         <div class="countdown-timer mb-100 wow fadeInUp" data-wow-delay="300ms">
-                            <div id="clock"></div>
+                          
+                            <div class="countdown"></div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
+
+       
+
     </section>
     <!-- About Us And Countdown Area End -->
 
@@ -753,37 +764,12 @@
             </div>
             
             <div class="row justify-content-between">
-                <!--
-                <div class="col-12 col-sm-3">
-                    <div class="contact-information mb-100">
-                        
-                        <div class="single-contact-info wow fadeInUp" data-wow-delay="300ms">
-                            <p>Address:</p>
-                            <h6>184 Main Collins Street</h6>
-                        </div>
-                        
-                        <div class="single-contact-info wow fadeInUp" data-wow-delay="300ms">
-                            <p>Phone:</p>
-                            <h6>(226) 446 9371</h6>
-                        </div>
-                        
-                        <div class="single-contact-info wow fadeInUp" data-wow-delay="300ms">
-                            <p>Email:</p>
-                            <h6>confer@gmail.com</h6>
-                        </div>
-                        
-                        <div class="single-contact-info wow fadeInUp" data-wow-delay="300ms">
-                            <p>Website:</p>
-                            <h6>www.confer.com</h6>
-                        </div>
-                    </div>
-                </div>
-                -->
+               
                 <div class="col-12 col-sm-12">
                     <!-- Contact Form -->
                     <div class="contact_from_area mb-100 clearfix wow fadeInUp" data-wow-delay="300ms">
                         <div class="contact_form">
-                            <form action="mail.php" method="post" id="main_contact_form">
+                            <form action="" method="post" id="reg-form">
                                 <div class="contact_input_area">
                                     <div id="success_fail_info"></div>
                                     <div class="row">
@@ -796,7 +782,7 @@
                                         <!-- Form Group -->
                                         <div class="col-12 col-lg-6">
                                             <div class="form-group">
-                                                <input type="text" class="form-control mb-30" name="name" id="name2" placeholder="Last Name">
+                                                <input type="number" class="form-control mb-30" name="phone" id="phone" placeholder="Your Number">
                                             </div>
                                         </div>
                                         <!-- Form Group -->
@@ -808,19 +794,47 @@
                                         <!-- Form Group -->
                                         <div class="col-12 col-lg-6">
                                             <div class="form-group">
-                                                <input type="text" class="form-control mb-30" name="subject" id="subject" placeholder="Your Number">
+                                                <input type="text" class="form-control mb-30" name="institution" id="org" placeholder="Name of your Organization">
                                             </div>
                                         </div>
+                                       <!-- Form Group -->    
+                
+                                        <div class="col-12 col-lg-6">
+                                            <div class="form-group">
+                                                <input type="radio" name="food-pref" id="food-1" value="Veg"> Veg 
+                                                <input type="radio" name="food-pref" id="food-2" value="NonVeg"> Non-Veg 
+                                            </div>
+                                        </div>
+                            
                                         <!-- Form Group -->
+                                        <div class="col-12 col-lg-6">
+                                            <div class="form-group">
+                                                <input type="radio" name="status" id="prof-1" value="prof"> Professional
+                                                <input type="radio" name="status" id="prof-2" value="std"> Student
+                                            </div>
+                                        </div>
+                                        <!-- Form Group-->
+                                        <div class="col-12 col-lg-6">
+                                            <div class="form-group">
+                                                T-shirt size 
+                                                <select id="tshirt">
+                                                    <option name="size" id="small" value="S">S</option>
+                                                    <option name="size" id="med" value="M">M</option>
+                                                    <option name="size" id="large" value="L">L</option>
+                                                    <option name="size" id="x-large" value="XL">XL</option>
+                                                </select> 
+                                            </div>
+                                        </div>
+                                        <!-- Form Group-->
                                         <div class="col-12">
                                             <div class="form-group">
-                                                <textarea name="message" class="form-control mb-30" id="message" cols="30" rows="6" placeholder="Your Message *"></textarea>
+                                                
                                             </div>
                                         </div>
                                         <!-- Button -->
                                         
                                         <div class="col-12 text-center">
-                                            <button type="submit" class="btn confer-btn">Submit <i class="zmdi zmdi-long-arrow-right"></i></button>
+                                            <button class="btn confer-btn">Submit <i class="zmdi zmdi-long-arrow-right" ></i></button>
                                         
                                     
                                     </div>
@@ -914,8 +928,37 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
     <!-- Footer Area End -->
 
     <!-- **** All JS Files ***** -->
-   
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <!-- TODO: Add SDKs for Firebase products that you want to use
+         https://firebase.google.com/docs/web/setup#available-libraries -->
+
+<!--===============================================================================-->
+
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script src="https://www.gstatic.com/firebasejs/7.6.1/firebase-app.js"></script>
+
+    <!-- TODO: Add SDKs for Firebase products that you want to use
+        https://firebase.google.com/docs/web/setup#available-libraries -->
+    <script src="https://www.gstatic.com/firebasejs/7.5.2/firebase-firestore.js"></script>
+
+    <script>
+    // Your web app's Firebase configuration
+    var firebaseConfig = {
+        apiKey: "AIzaSyDqEfpg3V6-g7ROTQPQlB-6aGziRKZbrw8",
+        authDomain: "innovator-s-summit-22822.firebaseapp.com",
+        databaseURL: "https://innovator-s-summit-22822.firebaseio.com",
+        projectId: "innovator-s-summit-22822",
+        storageBucket: "innovator-s-summit-22822.appspot.com",
+        messagingSenderId: "1043786911528",
+        appId: "1:1043786911528:web:6d5f156eb0a7ea70f2ca1d"
+    };
+    // Initialize Firebase
+    firebase.initializeApp(firebaseConfig);
     </script>
+
+    <script src="js/form.js"></script>
+
+<!--===============================================================================-->
     <!-- jQuery 2.2.4 -->
     <script src="js/jquery.min.js"></script>
     <!-- Popper -->
@@ -926,6 +969,8 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
     <script src="js/confer.bundle.js"></script>
     <!-- Active -->
     <script src="js/default-assets/active.js"></script>
+
+    <script src="js/redirect.js"></script>
 <script>
 $(document).on('click', 'a[href^="#"]', function(e) {
     // target element id

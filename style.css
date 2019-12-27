@@ -2773,3 +2773,34 @@ input:required {
     width: 70px;
   }
 }
+.countdown div {
+  margin: 20px;
+  display: inline-block;
+  padding: 25px;
+  min-width: 120px;
+ 
+  color: #ffffff;
+  font-size: 48px;
+  font-weight: 600;
+  text-align: center;
+  line-height: 1.2;
+}
+.countdown div span {
+  display: block;
+  font-size: 14px;
+  font-weight: 400;
+}
+.form-group
+{
+  color: white;
+
+}
+.teamsec1
+{
+  text-align: center;
+  font-size: 30px;
+  border: 1px solid rgb(5, 5, 5);
+  border-radius: 10px;
+  margin: 10px;
+  border-width: inherit;
+}
