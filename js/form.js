@@ -4,6 +4,11 @@ $(document).ready(function() {
 	var db = firebase.firestore();
 
 	$("#reg-form").submit(function() {
+
+        // change to submitting..
+
+        $("#btn1").text("Submitting...");
+
         var name = $("#name").val();
         console.log(name);
         var email = $("#email").val();
@@ -20,9 +25,12 @@ $(document).ready(function() {
         console.log(food);
         var prof = $("input[name='status']:checked").val();
         console.log(prof);
-
         var tshirt = $("#tshirt option:selected").val();
         console.log(tshirt);
+
+        // query string
+
+        qstring = "?data_name="+name.trim()+"&data_email="+email.trim()+"&data_phone="+phone.trim();
 
 		db.collection("innova1").add({
 			name: name.trim(),
@@ -37,11 +45,11 @@ $(document).ready(function() {
 			console.log("Message saved");
 			if (prof === "prof") {
                 console.log("prof");
-                window.location.replace(""); // payment link for prof
+                window.location.href = ("https://www.instamojo.com/innovatorsummit/innovators-summit-ticket-professional/" + qstring); // payment link for prof
             }
             else {
                 console.log("std");
-                window.location.replace(""); // for std
+                window.location.href = ("https://www.instamojo.com/innovatorsummit/innovators-summit-ticket-student/" + qstring); // for std
             }
 		}).catch(function(err) {
 			console.log("Got an error: ", err);
