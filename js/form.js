@@ -25,6 +25,8 @@ $(document).ready(function() {
         console.log(food);
         var prof = $("input[name='status']:checked").val();
         console.log(prof);
+        var pref = $("input[name='pref']:checked").val();
+        console.log(pref);
         var tshirt = $("#tshirt option:selected").val();
         console.log(tshirt);
 
@@ -39,17 +41,29 @@ $(document).ready(function() {
 			org : org.trim(),
 			food : food.trim(),
             prof : prof.trim(),
+            pref : pref.trim(),
             tshirt : tshirt.trim(),
 			timestamp : timestamp
 		}).then(function(docRef) {
 			console.log("Message saved");
 			if (prof === "prof") {
                 console.log("prof");
-                window.location.href = ("https://www.instamojo.com/innovatorsummit/innovators-summit-ticket-professional/" + qstring); // payment link for prof
-            }
+                if (pref === "full")
+                    window.location.href = ("https://www.instamojo.com/innovatorsummit/innovators-summit-ticket-professional/" + qstring); // payment link for prof
+                else if (pref === "ws")
+                    window.location.href = ("https://www.instamojo.com/innovatorsummit/professional-workshop-ticket/" + qstring);
+                else 
+                    window.location.href = ("https://www.instamojo.com/innovatorsummit/professional-session-ticket/" + qstring);
+                }
             else {
                 console.log("std");
-                window.location.href = ("https://www.instamojo.com/innovatorsummit/innovators-summit-ticket-student/" + qstring); // for std
+                if (pref === "full")
+                    window.location.href = ("https://www.instamojo.com/innovatorsummit/innovators-summit-ticket-student/" + qstring); // for std
+                else if (pref === "ws")
+                    window.location.href = ("https://www.instamojo.com/innovatorsummit/student-workshop-ticket/" + qstring);
+                else 
+                    window.location.href = ("https://www.instamojo.com/innovatorsummit/student-session-ticket/" + qstring);
+                
             }
 		}).catch(function(err) {
 			console.log("Got an error: ", err);
