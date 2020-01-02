@@ -1,85 +1,127 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="UTF-8">
-    <meta name="description" content="">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-
-    <!-- Title -->
-    <title>Innovators' summit</title>
-
-    
-
-    <!-- Stylesheet -->
-    <!-- <link rel="stylesheet" href="style.css"> -->
-    <link rel="stylesheet" type="text/css" href="newStyle.css">
-
-    <!-- JQuery -->
-    <script
-			  src="https://code.jquery.com/jquery-3.4.1.min.js"
-			  integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
-			  crossorigin="anonymous"></script>
-
+	<title>Contact V3</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+<!--===============================================================================================-->
+	<link rel="icon" type="image/png" href="images/icons/favicon.ico"/>
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="vendor/bootstrap/css/bootstrap.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="fonts/font-awesome-4.7.0/css/font-awesome.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="vendor/animate/animate.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="vendor/css-hamburgers/hamburgers.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="vendor/select2/select2.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="css/util.css">
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+<!--===============================================================================================-->
 </head>
-
 <body>
- 
-<div class="overlay_pop">
-    <div class="overlay_content">
-        <div class="row">
-           
-            <div class="col col-12 text-center ">
-                    Register for Event
-            </div>
+<div class="row">
+	<div class="col col-12">
 
-            <div class="col col-12">
-                <form class="text-center">
-                    <div class="form-group">
-                      <!-- <label for="exampleInputEmail1">Email address</label> -->
-                      <input type="name" class="form-control text-center" id="email" aria-describedby="emailHelp" placeholder="Enter name">
-                     
-                    </div>
-
-                    <div class="form-group">
-                        <!-- <label for="exampleInputEmail1">Email address</label> -->
-                        <input type="email" class="form-control text-center" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
-                       
-                      </div>
-
-                      <div class="form-group">
-                        <!-- <label for="exampleInputEmail1">Phone number</label> -->
-                        <input type="text" pattern="[0-9]{10}" class="form-control text-center" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter phone no">
-                       
-                      </div>
-
-                      <br>
-                      <div class="form-check">
-                        <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked>
-                        <label class="form-check-label" for="exampleRadios1">
-                          Veg
-                        </label>
-                      </div>
-                      <div class="form-check">
-                        <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="option2">
-                        <label class="form-check-label" for="exampleRadios2">
-                         Non veg
-                        </label>
-                      </div>
-                      <br>
-
-                    <button type="submit" class="btn btn-primary">Submit</button>
-                  </form>
-            </div>
-        </div>
-    </div>
+		<a href="index.html" >
+			<img src="./img/core-img/logo3.png" class="logo">
+			
+	</div>
 </div>
+	<div class="bg-contact3" style="background-image: url('images/bg-01.jpg');">
+		<div class="container-contact3">
+			<div class="wrap-contact3">
+				<form class="contact3-form validate-form">
+					<span class="contact3-form-title">
+						Fill The Form
+					</span>
 
-   
+					
+					<div class="wrap-input3 validate-input" data-validate="Name is required">
+						<input class="input3" type="text" name="name" placeholder="Your Name">
+						<span class="focus-input3"></span>
+					</div>
 
-    
+					<div class="wrap-input3 validate-input" data-validate = "Valid email is required: ex@abc.xyz">
+						<input class="input3" type="text" name="email" placeholder="Your Email">
+						<span class="focus-input3"></span>
+					</div>
+
+					<div class="wrap-input3 validate-input" data-validate="Phone Number">
+						<input class="input3" type="number" name="phone" placeholder="Your phone number">
+						<span class="focus-input3"></span>
+					</div>
+
+					
+						<div>
+							<h6>T-Shirt Size</h6>
+							<select class="selection-2" name="service">
+								<option>XL-Extra Large</option>
+								<option>L- Large</option>
+								<option>M - Medium</option>
+								<option>s - Small</option>
+							</select>
+						</div>
+						<span class="focus-input3"></span>
+					
+
+					
+						<div>
+							<h6>Food Preference</h6>
+							<select class="selection-2" name="Food">
+								<option>Veg</option>
+								<option>Non-Veg</option>
+
+							</select>
+						</div>
+						<span class="focus-input3"></span>
+					
+
+					
+					
+
+
+					<div class="container-contact3-form-btn">
+						<button class="contact3-form-btn">
+							Submit
+						</button>
+					</div>
+					
+				</form>
+			</div>
+		</div>
+	</div>
+
+
+	<div id="dropDownSelect1"></div>
+
+<!--===============================================================================================-->
+	<script src="vendor/jquery/jquery-3.2.1.min.js"></script>
+<!--===============================================================================================-->
+	<script src="vendor/bootstrap/js/popper.js"></script>
+	<script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+<!--===============================================================================================-->
+	<script src="vendor/select2/select2.min.js"></script>
+	<script>
+		$(".selection-2").select2({
+			minimumResultsForSearch: 20,
+			dropdownParent: $('#dropDownSelect1')
+		});
+	</script>
+<!--===============================================================================================-->
+	<script src="js/main.js"></script>
+
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-23581568-13"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-23581568-13');
+</script>
+
 </body>
-
 </html>
