@@ -62,11 +62,11 @@
 					
 						<div>
 							<h6>T-Shirt Size</h6>
-							<select class="selection-2" name="service">
-								<option>XL-Extra Large</option>
-								<option>L- Large</option>
-								<option>M - Medium</option>
-								<option>s - Small</option>
+							<select class="selection-2"  id="tshirt">
+								<option  name="size" id="small" value="S" >XL-Extra Large</option>
+								<option name="size" id="med" value="M" >L- Large</option>
+								<option name="size" id="large" value="L" >M - Medium</option>
+								<option name="size" id="x-large" value="XL" >s - Small</option>
 							</select>
 						</div>
 						<span class="focus-input3"></span>
@@ -76,20 +76,19 @@
 						<div>
 							<h6>Food Preference</h6>
 							<select class="selection-2" name="Food">
-								<option>Veg</option>
-								<option>Non-Veg</option>
+								<option name="food-pref" id="food-1" value="Veg">Veg</option>
+								<option type="radio" name="food-pref" id="food-2" value="NonVeg"  >Non-Veg</option>
 
 							</select>
 						</div>
 						<span class="focus-input3"></span>
 					
 
-					
-					
+										
 
 
 					<div class="container-contact3-form-btn">
-						<button class="contact3-form-btn">
+						<button class="contact3-form-btn" id="btn1" >
 							Submit
 						</button>
 					</div>
@@ -119,7 +118,7 @@
 	<script src="js/main.js"></script>
 
 	<!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-23581568-13"></script>
+<!-- <script async src="https://www.googletagmanager.com/gtag/js?id=UA-23581568-13"></script>
 <script>
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
@@ -127,6 +126,6 @@
 
   gtag('config', 'UA-23581568-13');
 </script>
-
+ -->
 </body>
 </html>
