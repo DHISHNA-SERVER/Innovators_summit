@@ -64,7 +64,7 @@ h6 {
   font-family: "Poppins", sans-serif;
   color: #111343;
   line-height: 1.25;
-  font-weight: 600; }
+  font-weight: 500; }
 
 a,
 a:active,
@@ -2342,7 +2342,7 @@ input:required {
     .single-schedule-area .single-schedule-tumb-info .single-schedule-info {
       margin-left: 30px; }
       .single-schedule-area .single-schedule-tumb-info .single-schedule-info h6 {
-        font-size: 20px;
+        font-size: 18px;
         color: #ffffff;
         font-weight: 600; }
         @media only screen and (min-width: 992px) and (max-width: 1199px) {
