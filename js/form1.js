@@ -7,42 +7,42 @@ $(document).ready(function() {
     const len = doc.length;
     const form = doc[len - 1]; // getting which document type
 
-    if (form === "form1.html") {
+    if (form === "form_1.html") {
         var pref = "Talks Only";
         var prof = "Student";
         var link = "https://www.instamojo.com/innovatorsummit/student-session-ticket/";
     }
-    else if (form === "form2.html") {
+    else if (form === "form_2.html") {
         var pref = "Workshops Only";
         var prof = "Student";
         var link = "https://www.instamojo.com/innovatorsummit/student-workshop-ticket/";
     }
-    else if (form === "form3.html") {
+    else if (form === "form_3.html") {
         var pref = "Combo Track-1";
         var prof = "Student";
         var link = "https://www.instamojo.com/innovatorsummit/innovators-summit-ticket-student/";
     }
-    else if (form === "form4.html") {
+    else if (form === "form_4.html") {
         var pref = "Combo Track-2";
         var prof = "Student";
         var link = "https://www.instamojo.com/innovatorsummit/innovator-summit-ticket-track-2-student/";
     }
-    else if (form === "form5.html") {
+    else if (form === "form_5.html") {
         var pref = "Talks Only";
         var prof = "Professional";
         var link = "https://www.instamojo.com/innovatorsummit/professional-session-ticket/";
     }
-    else if (form === "form6.html") {
+    else if (form === "form_6.html") {
         var pref = "Workshops Only";
         var prof = "Professional";
         var link = "https://www.instamojo.com/innovatorsummit/professional-workshop-ticket/";
     }
-    else if (form === "form7.html") {
+    else if (form === "form_7.html") {
         var pref = "Combo Track-1";
         var prof = "Professional";
         var link = "https://www.instamojo.com/innovatorsummit/innovators-summit-ticket-professional/";
     }
-    else if (form === "form8.html") {
+    else if (form === "form_8.html") {
         var pref = "Combo Track-2";
         var prof = "Professional";
         var link = "https://www.instamojo.com/innovatorsummit/innovator-summit-ticket-track-2-professional/";
