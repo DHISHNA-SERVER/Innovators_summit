@@ -53,6 +53,8 @@ $(document).ready(function() {
         var prof = "";
     }
 
+    console.log("selected", form);
+
     $("#reg-form").submit(function() {
 
         console.log("submit pressed");
@@ -98,5 +100,8 @@ $(document).ready(function() {
             // catch error
             console.log(err);
         });
+
+        return false;
     }); 
+
 });
