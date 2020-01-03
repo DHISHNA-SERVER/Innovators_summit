@@ -20,6 +20,7 @@
 	<link rel="stylesheet" type="text/css" href="css/util.css">
 	<link rel="stylesheet" type="text/css" href="css/main.css">
 <!--===============================================================================================-->
+	<script src="vendor/jquery/jquery-3.2.1.min.js"></script>
 </head>
 <body>
 <div class="row">
@@ -40,17 +41,17 @@
 
 					<div id="success_fail_info"></div>
 					<div class="wrap-input3 validate-input" data-validate="Name is required">
-						<input class="input3" type="text" name="name" id="name" placeholder="Your Name">
+						<input class="input3" type="text" name="name" id="name" placeholder="Your Name" required>
 						<span class="focus-input3"></span>
 					</div>
 
 					<div class="wrap-input3 validate-input" data-validate = "Valid email is required: ex@abc.xyz">
-						<input class="input3" type="text" name="phone" id="phone" placeholder="Your Email">
+						<input class="input3" type="text" name="email" id="email" placeholder="Your Email" required>
 						<span class="focus-input3"></span>
 					</div>
 
 					<div class="wrap-input3 validate-input" data-validate="Phone Number">
-						<input class="input3" type="number" name="email" id="email" placeholder="Your phone number">
+						<input class="input3" type="number" name="phone" id="phone" placeholder="Your phone number" required>
 						<span class="focus-input3"></span>
 					</div>
 
@@ -61,7 +62,7 @@
 
 					
 						<div>
-							<h6 class="text-center">  T-Shirt Size</h6>
+							<h6 class="text-center"> Select T-Shirt Size</h6>
 							<select class="selection-2"  id="tshirt">
 								<option  name="size" id="small" value="S" >XL-Extra Large</option>
 								<option name="size" id="med" value="M" >L- Large</option>
@@ -75,9 +76,9 @@
 					
 						<div>
 							<h6 class="text-center">Food Preference</h6>
-							<select class="selection-2" name="Food">
-								<option name="food-pref" id="food-1" value="Veg">Veg</option>
+							<select class="selection-2" name="Food" id="food">
 								<option type="radio" name="food-pref" id="food-2" value="NonVeg"  >Non-Veg</option>
+								<option name="food-pref" id="food-1" value="Veg">Veg</option>
 
 							</select>
 						</div>
@@ -129,9 +130,11 @@
     };
     // Initialize Firebase
     firebase.initializeApp(firebaseConfig);
-    </script>
+	</script>
+	
+	<script src="js/form1.js"></script>
+
 <!--===============================================================================================-->
-	<script src="vendor/jquery/jquery-3.2.1.min.js"></script>
 <!--===============================================================================================-->
 	<script src="vendor/bootstrap/js/popper.js"></script>
 	<script src="vendor/bootstrap/js/bootstrap.min.js"></script>
@@ -144,7 +147,7 @@
 		});
 	</script>
 <!--===============================================================================================-->
-	<script src="js/main.js"></script>
+	<!--<script src="js/main.js"></script>-->
 
 	<!-- Global site tag (gtag.js) - Google Analytics -->
 <!-- <script async src="https://www.googletagmanager.com/gtag/js?id=UA-23581568-13"></script>
@@ -156,7 +159,5 @@
   gtag('config', 'UA-23581568-13');
 </script>
  -->
-
- <script src="js/form.js"></script>
 </body>
 </html>
