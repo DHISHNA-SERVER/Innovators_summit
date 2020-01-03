@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Contact V3</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+<!--===============================================================================================-->
+	<link rel="icon" type="image/png" href="images/icons/favicon.ico"/>
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="vendor/bootstrap/css/bootstrap.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="fonts/font-awesome-4.7.0/css/font-awesome.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="vendor/animate/animate.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="vendor/css-hamburgers/hamburgers.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="vendor/select2/select2.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="css/util.css">
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+<!--===============================================================================================-->
+	<script src="vendor/jquery/jquery-3.2.1.min.js"></script>
+</head>
+<body>
+<div class="row">
+	<div class="col col-12">
+
+		<a href="index.html" >
+			<img src="./img/core-img/logo3.png" class="logo">
+		</a>	
+	</div>
+</div>
+	<div class="bg-contact3" style="background-image: url('images/bg-01.jpg');">
+		<div class="container-contact3">
+			<div class="wrap-contact3">
+				<form class="contact3-form validate-form" action="" method="post" id="reg-form">
+					<span class="contact3-form-title">
+						Fill The Form
+					</span>
+
+					<div id="success_fail_info"></div>
+					<div class="wrap-input3 validate-input" data-validate="Name is required">
+						<input class="input3" type="text" name="name" id="name" placeholder="Your Name">
+						<span class="focus-input3"></span>
+					</div>
+
+					<div class="wrap-input3 validate-input" data-validate = "Valid email is required: ex@abc.xyz">
+						<input class="input3" type="text" name="email" id="email" placeholder="Your Email">
+						<span class="focus-input3"></span>
+					</div>
+
+					<div class="wrap-input3 validate-input" data-validate="Phone Number">
+						<input class="input3" type="number" name="phone" id="phone" placeholder="Your phone number">
+						<span class="focus-input3"></span>
+					</div>
+
+					<div class="wrap-input3 validate-input" data-validate="Organization">
+						<input class="input3" type="text" name="institution" id="org"  placeholder="Your Organization">
+						<span class="focus-input3"></span>
+					</div>
+
+					
+						<div>
+							<h6 class="text-center">  T-Shirt Size</h6>
+							<select class="selection-2"  id="tshirt">
+								<option  name="size" id="small" value="S" >XL-Extra Large</option>
+								<option name="size" id="med" value="M" >L- Large</option>
+								<option name="size" id="large" value="L" >M - Medium</option>
+								<option name="size" id="x-large" value="XL" >s - Small</option>
+							</select>
+						</div>
+						<span class="focus-input3"></span>
+					
+
+					
+						<div>
+							<h6 class="text-center">Food Preference</h6>
+							<select class="selection-2" name="Food">
+								<option name="food-pref" id="food-1" value="Veg">Veg</option>
+								<option type="radio" name="food-pref" id="food-2" value="NonVeg"  >Non-Veg</option>
+
+							</select>
+						</div>
+						<span class="focus-input3"></span>
+					
+
+										
+
+
+					<div class="container-contact3-form-btn">
+						<button class="contact3-form-btn" id="btn1" >
+							Submit
+						</button>
+					</div>
+					
+				</form>
+			</div>
+		</div>
+	</div>
+
+
+	<div id="dropDownSelect1"></div>
+
+
+ <!-- **** All JS Files ***** -->
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <!-- TODO: Add SDKs for Firebase products that you want to use
+         https://firebase.google.com/docs/web/setup#available-libraries -->
+
+<!--===============================================================================-->
+
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script src="https://www.gstatic.com/firebasejs/7.6.1/firebase-app.js"></script>
+
+    <!-- TODO: Add SDKs for Firebase products that you want to use
+        https://firebase.google.com/docs/web/setup#available-libraries -->
+    <script src="https://www.gstatic.com/firebasejs/7.5.2/firebase-firestore.js"></script>
+
+    <script>
+    // Your web app's Firebase configuration
+    var firebaseConfig = {
+        apiKey: "AIzaSyDqEfpg3V6-g7ROTQPQlB-6aGziRKZbrw8",
+        authDomain: "innovator-s-summit-22822.firebaseapp.com",
+        databaseURL: "https://innovator-s-summit-22822.firebaseio.com",
+        projectId: "innovator-s-summit-22822",
+        storageBucket: "innovator-s-summit-22822.appspot.com",
+        messagingSenderId: "1043786911528",
+        appId: "1:1043786911528:web:6d5f156eb0a7ea70f2ca1d"
+    };
+    // Initialize Firebase
+    firebase.initializeApp(firebaseConfig);
+    </script>
+<!--===============================================================================================-->
+	<script src="js/form1.js"></script>
+<!--===============================================================================================-->
+	<script src="vendor/bootstrap/js/popper.js"></script>
+	<script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+<!--===============================================================================================-->
+	<script src="vendor/select2/select2.min.js"></script>
+	<script>
+		$(".selection-2").select2({
+			minimumResultsForSearch: 20,
+			dropdownParent: $('#dropDownSelect1')
+		});
+	</script>
+<!--===============================================================================================-->
+	<!--<script src="js/main.js"></script>-->
+
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+<!-- <script async src="https://www.googletagmanager.com/gtag/js?id=UA-23581568-13"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-23581568-13');
+</script>
+ -->
+
+</body>
+</html>

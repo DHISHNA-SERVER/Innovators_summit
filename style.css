@@ -2812,3 +2812,35 @@ input:required {
 {
   height: 41vh;
 }
+.harishankar
+{
+  height: 344px;
+}
+@media only screen and (max-width: 1200px)
+{
+  .harishankar
+  {
+    height: 282px;
+  }
+}
+@media only screen and (max-width: 991px)
+{
+  .harishankar
+  {
+    height: 322px;
+  }
+}
+@media only screen and (max-width: 767px)
+{
+  .harishankar
+  {
+    height: 238px;
+  }
+}
+@media only screen and (max-width: 575px)
+{
+  .harishankar
+  {
+    height: 350px;
+  }
+}
