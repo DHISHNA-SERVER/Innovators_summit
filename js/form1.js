@@ -42,7 +42,7 @@ $(document).ready(function() {
         var prof = "Professional";
         var link = "https://www.instamojo.com/innovatorsummit/innovators-summit-ticket-professional/";
     }
-    else if (form === "form_5.html") {
+    else if (form === "form_8.html") {
         var pref = "Combo Track-2";
         var prof = "Professional";
         var link = "https://www.instamojo.com/innovatorsummit/innovator-summit-ticket-track-2-professional/";
