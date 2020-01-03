@@ -2844,3 +2844,21 @@ input:required {
     height: 350px;
   }
 }
+#faq #faq-list 
+li {
+  border-bottom: 1px solid #ddd;
+  font-size: 15px;
+  
+  margin-bottom: 15px;
+}
+
+.section-header
+{
+  text-align: center;
+}
+#faq
+{
+  
+  color: white;
+  
+}
