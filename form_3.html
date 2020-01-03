@@ -20,6 +20,7 @@
 	<link rel="stylesheet" type="text/css" href="css/util.css">
 	<link rel="stylesheet" type="text/css" href="css/main.css">
 <!--===============================================================================================-->
+	<script src="vendor/jquery/jquery-3.2.1.min.js"></script>
 </head>
 <body>
 <div class="row">
@@ -75,7 +76,7 @@
 					
 						<div>
 							<h6 class="text-center">Food Preference</h6>
-							<select class="selection-2" name="Food">
+							<select class="selection-2" name="Food" id="food">
 								<option name="food-pref" id="food-1" value="Veg">Veg</option>
 								<option type="radio" name="food-pref" id="food-2" value="NonVeg"  >Non-Veg</option>
 
@@ -129,9 +130,11 @@
     };
     // Initialize Firebase
     firebase.initializeApp(firebaseConfig);
-    </script>
+	</script>
+	
+	<script src="js/form1.js"></script>
+
 <!--===============================================================================================-->
-	<script src="vendor/jquery/jquery-3.2.1.min.js"></script>
 <!--===============================================================================================-->
 	<script src="vendor/bootstrap/js/popper.js"></script>
 	<script src="vendor/bootstrap/js/bootstrap.min.js"></script>
@@ -144,7 +147,7 @@
 		});
 	</script>
 <!--===============================================================================================-->
-	<script src="js/main.js"></script>
+	<!--<script src="js/main.js"></script>-->
 
 	<!-- Global site tag (gtag.js) - Google Analytics -->
 <!-- <script async src="https://www.googletagmanager.com/gtag/js?id=UA-23581568-13"></script>
@@ -156,7 +159,5 @@
   gtag('config', 'UA-23581568-13');
 </script>
  -->
-
- <script src="js/form1.js"></script>
 </body>
 </html>
