@@ -42,7 +42,7 @@ $(document).ready(function() {
         var prof = "Professional";
         var link = "https://www.instamojo.com/innovatorsummit/innovators-summit-ticket-professional/";
     }
-    else if (form === "form5.html") {
+    else if (form === "form8.html") {
         var pref = "Combo Track-2";
         var prof = "Professional";
         var link = "https://www.instamojo.com/innovatorsummit/innovator-summit-ticket-track-2-professional/";
@@ -59,7 +59,7 @@ $(document).ready(function() {
 
         console.log("submit pressed");
 
-        $("#btn1").text("Submitting..."); // change button
+        $("#btn1").text("Please wait..."); // change button
 
         var name = $("#name").val();
         console.log(name);
